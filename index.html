@@ -744,8 +744,8 @@
     <span class="eyebrow reveal">// projects</span>
     <h2 class="section-title reveal">Selected Azure builds</h2>
     <p class="section-lead reveal">
-      A sample of infrastructure I've designed and automated. Architecture diagrams and repos are
-      placeholders — swap in your own screenshots and links.
+      A sample of infrastructure I've designed and automated with Bicep, Terraform, and GitHub Actions.
+      Each links to real, deployable code — part of a set of 13 hands-on Azure projects.
     </p>
 
     <div class="projects-grid">
@@ -763,20 +763,21 @@
           </svg>
         </div>
         <div class="project-body">
-          <h3>Hub-and-Spoke Landing Zone</h3>
+          <h3>Private-Only Networking</h3>
           <p class="desc">
-            Enterprise-scale network topology with centralized Azure Firewall, private DNS, and
-            segmented spoke VNets — fully provisioned via Terraform with policy guardrails.
+            Lock data services down to private-only access: disable public network access on Storage
+            and Key Vault, add Private Endpoints with private IPs inside the VNet, and wire up Private
+            DNS so name resolution stays internal.
           </p>
           <div class="badges">
             <span class="badge">Azure VNet</span>
-            <span class="badge">Azure Firewall</span>
-            <span class="badge">Terraform</span>
+            <span class="badge">Private Endpoints</span>
             <span class="badge">Private DNS</span>
+            <span class="badge">Bicep</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Magela84" target="_blank" rel="noopener">⌥ GitHub</a>
-            <a href="#" target="_blank" rel="noopener">↗ Case study</a>
+            <a href="https://github.com/Magela84/Azure-Engineer-portfolio-website/tree/main/projects/azure-private-endpoints" target="_blank" rel="noopener">⌥ GitHub</a>
+            <a href="https://github.com/Magela84/Azure-Engineer-portfolio-website/blob/main/projects/azure-private-endpoints/README.md" target="_blank" rel="noopener">↗ Details</a>
           </div>
         </div>
       </article>
@@ -795,21 +796,21 @@
           </svg>
         </div>
         <div class="project-body">
-          <h3>GitOps CI/CD Platform for AKS</h3>
+          <h3>CI/CD Pipeline for Infrastructure</h3>
           <p class="desc">
-            End-to-end pipeline: Azure DevOps builds container images, pushes to ACR, and Argo CD
-            syncs to AKS. Blue-green rollouts with automated rollback and Slack notifications.
+            Automated IaC delivery with GitHub Actions: every push and PR compiles Bicep and validates
+            Terraform, so broken templates fail before they ever reach Azure — plus an approval-gated
+            deployment workflow for safe releases.
           </p>
           <div class="badges">
-            <span class="badge">AKS</span>
-            <span class="badge">Azure DevOps</span>
-            <span class="badge">Argo CD</span>
-            <span class="badge">Helm</span>
-            <span class="badge">ACR</span>
+            <span class="badge">GitHub Actions</span>
+            <span class="badge">Bicep</span>
+            <span class="badge">Terraform</span>
+            <span class="badge">Azure CLI</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Magela84" target="_blank" rel="noopener">⌥ GitHub</a>
-            <a href="#" target="_blank" rel="noopener">↗ Case study</a>
+            <a href="https://github.com/Magela84/Azure-Engineer-portfolio-website/tree/main/projects/azure-devops-cicd" target="_blank" rel="noopener">⌥ GitHub</a>
+            <a href="https://github.com/Magela84/Azure-Engineer-portfolio-website/blob/main/projects/azure-devops-cicd/README.md" target="_blank" rel="noopener">↗ Details</a>
           </div>
         </div>
       </article>
@@ -828,24 +829,29 @@
           </svg>
         </div>
         <div class="project-body">
-          <h3>Resilient Data &amp; Backup Platform</h3>
+          <h3>Secure Baseline Infrastructure</h3>
           <p class="desc">
-            Multi-region data layer combining Blob Storage, Azure SQL, and Cosmos DB with
-            geo-replication, lifecycle policies, and automated cross-region backup/DR runbooks.
+            The same hardened baseline — VNet + NSG, TLS-1.2 HTTPS-only Storage, and an RBAC Key Vault
+            — deployed twice, once in Bicep and once in Terraform, with idempotency checks and
+            root-cause drift analysis.
           </p>
           <div class="badges">
-            <span class="badge">Blob Storage</span>
-            <span class="badge">Azure SQL</span>
-            <span class="badge">Cosmos DB</span>
             <span class="badge">Bicep</span>
+            <span class="badge">Terraform</span>
+            <span class="badge">Azure VNet</span>
+            <span class="badge">Key Vault</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Magela84" target="_blank" rel="noopener">⌥ GitHub</a>
-            <a href="#" target="_blank" rel="noopener">↗ Case study</a>
+            <a href="https://github.com/Magela84/Azure-Engineer-portfolio-website/tree/main/projects/azure-iac-secure-baseline" target="_blank" rel="noopener">⌥ GitHub</a>
+            <a href="https://github.com/Magela84/Azure-Engineer-portfolio-website/blob/main/projects/azure-iac-secure-baseline/README.md" target="_blank" rel="noopener">↗ Details</a>
           </div>
         </div>
       </article>
 
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-top:40px;">
+      <a href="https://github.com/Magela84/Azure-Engineer-portfolio-website/tree/main/projects" target="_blank" rel="noopener" class="btn btn-ghost">View all 13 projects on GitHub →</a>
     </div>
   </div>
 </section>
