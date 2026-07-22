@@ -856,8 +856,8 @@
     <h2 class="section-title reveal">Selected Azure builds</h2>
     <p class="section-lead reveal">
       A sample of infrastructure I've designed and automated with Bicep, Terraform, and GitHub Actions.
-      Six industry-sector engagements plus a full-stack cost dashboard — each with business context,
-      clean Infrastructure as Code, and its own version-controlled repo.
+      Six industry-sector engagements, a full-stack cost dashboard, and a Terraform automation toolkit —
+      real, deployable code, each in its own version-controlled repo.
     </p>
 
     <div class="projects-grid">
@@ -1112,6 +1112,46 @@
           <div class="project-links">
             <a href="https://github.com/Magela84/ironclad-incident-response-rca" target="_blank" rel="noopener">⌥ GitHub</a>
             <a href="https://github.com/Magela84/ironclad-incident-response-rca#readme" target="_blank" rel="noopener">↗ Details</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 7 — Terraform Automation Toolkit -->
+      <article class="project-card reveal">
+        <div class="diagram">
+          <span class="tag">terraform toolkit</span>
+          <svg width="220" height="110" viewBox="0 0 220 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="30" y1="24" x2="190" y2="24" stroke="#0c5760" stroke-width="1.3"/>
+            <rect x="24" y="30" width="44" height="60" rx="5" stroke="#0fa4af" stroke-width="1.4" fill="#04252b"/>
+            <rect x="88" y="30" width="44" height="60" rx="5" stroke="#afdde5" stroke-width="1.4" fill="#04252b"/>
+            <rect x="152" y="30" width="44" height="60" rx="5" stroke="#964734" stroke-width="1.4" fill="#04252b"/>
+            <text x="46" y="65" fill="#0fa4af" font-size="12" font-family="monospace" text-anchor="middle">1</text>
+            <text x="110" y="65" fill="#afdde5" font-size="12" font-family="monospace" text-anchor="middle">2</text>
+            <text x="174" y="65" fill="#d5825f" font-size="12" font-family="monospace" text-anchor="middle">3</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>Terraform Automation Toolkit</h3>
+          <p class="project-meta">Infrastructure as Code · Terraform</p>
+          <p class="desc">
+            A three-part Terraform toolkit: a <strong>remote state backend</strong> on Azure Blob Storage
+            with state locking for safe team collaboration; a <strong>DRY, modular network design</strong>
+            deployed across dev/staging/prod from a single root config; and <strong>state-operation
+            drills</strong> — dependency graphing, <code>state rm</code>, and <code>import</code> — for
+            recovering from configuration drift.
+          </p>
+          <div class="badges">
+            <span class="badge">Terraform</span>
+            <span class="badge">HCL</span>
+            <span class="badge">Azure Blob</span>
+            <span class="badge">State Locking</span>
+            <span class="badge">Modules</span>
+            <span class="badge">Azure CLI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Magela84/Remote-State-Management" target="_blank" rel="noopener">⌥ State backend</a>
+            <a href="https://github.com/Magela84/terraform-modular-environments" target="_blank" rel="noopener">⌥ Modules</a>
+            <a href="https://github.com/Magela84/terraform-advanced-cli-tooling" target="_blank" rel="noopener">⌥ CLI recovery</a>
           </div>
         </div>
       </article>
